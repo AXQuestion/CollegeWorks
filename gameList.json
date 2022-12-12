@@ -1,7 +1,4 @@
-[
-{"type":"header","version":"5.2.0","comment":"Export to JSON plugin for PHPMyAdmin"},
-{"type":"database","name":"game_data"},
-{"type":"table","name":"game","database":"game_data","data":
+"data":
 [
 {"game":"神魔之塔 ","website":"巴哈姆特"},
 {"game":"英雄聯盟","website":"巴哈姆特"},
@@ -75,4 +72,3 @@
 {"game":"電馭叛客","website":"巴哈姆特"}
 ]
 }
-]
