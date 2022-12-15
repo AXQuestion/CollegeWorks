@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SQLLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SQLConnectActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/appbarForSql"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_baseline_chevron_left_24"
+        app:menu="@menu/topbar_for_mysql"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/shadow_toolbar"/>
+
+    </FrameLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shimmer">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_view"></include>
+            <include layout="@layout/shimmer_view"></include>
+            <include layout="@layout/shimmer_view"></include>
+            <include layout="@layout/shimmer_view"></include>
+            <include layout="@layout/shimmer_view"></include>
+            <include layout="@layout/shimmer_view"></include>
+            <include layout="@layout/shimmer_view"></include>
+            <include layout="@layout/shimmer_view"></include>
+            <include layout="@layout/shimmer_view"></include>
+            <include layout="@layout/shimmer_view"></include>
+            <include layout="@layout/shimmer_view"></include>
+            <include layout="@layout/shimmer_view"></include>
+            <include layout="@layout/shimmer_view"></include>
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_for_sql"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:visibility="gone"
+            android:scrollbars="vertical" />
+    </ScrollView>
+</LinearLayout>
